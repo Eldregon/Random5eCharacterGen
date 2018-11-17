@@ -2,11 +2,11 @@
 
 Warlock::Warlock()
     : Character() {
-
+        selectSkills();
 }
 Warlock::Warlock(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Warlock::selectSkills() {

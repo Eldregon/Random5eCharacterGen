@@ -75,6 +75,15 @@ int main() {
             character = Wizard();
             break;
     }
+
+    prompt = "How do you want to create attribute scores?";
+    answers = {"Roll dice","Assign points"};
+    input = get_input(prompt, answers);
+    if (input == 1) {
+        character.rollForStats();
+    } else {
+        character.pickForStats();
+    }
     character.printer();
 
     return 0;
