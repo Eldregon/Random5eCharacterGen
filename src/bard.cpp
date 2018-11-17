@@ -2,10 +2,11 @@
 
 Bard::Bard()
     : Character() {
-
+        selectSkills();
 }
 Bard::Bard(uint32_t level)
     : Character(level) {
+        selectSkills();
 
 }
 

@@ -2,11 +2,11 @@
 
 Wizard::Wizard()
     : Character() {
-
+        selectSkills();
 }
 Wizard::Wizard(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Wizard::selectSkills() {

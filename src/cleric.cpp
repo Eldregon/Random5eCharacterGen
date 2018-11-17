@@ -2,11 +2,11 @@
 
 Cleric::Cleric()
     : Character() {
-
+        selectSkills();
 }
 Cleric::Cleric(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Cleric::selectSkills() {

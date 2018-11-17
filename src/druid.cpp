@@ -2,11 +2,11 @@
 
 Druid::Druid()
     : Character() {
-
+        selectSkills();
 }
 Druid::Druid(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Druid::selectSkills() {

@@ -2,11 +2,11 @@
 
 Sorcerer::Sorcerer()
     : Character() {
-
+        selectSkills();
 }
 Sorcerer::Sorcerer(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Sorcerer::selectSkills() {

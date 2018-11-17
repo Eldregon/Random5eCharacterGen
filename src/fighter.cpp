@@ -3,10 +3,12 @@
 Fighter::Fighter()
     : Character() {
 
+        selectSkills();
 }
 Fighter::Fighter(uint32_t level)
     : Character(level) {
 
+        selectSkills();
 }
 
 void Fighter::selectSkills() {

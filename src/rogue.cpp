@@ -2,11 +2,11 @@
 
 Rogue::Rogue()
     : Character() {
-
+        selectSkills();
 }
 Rogue::Rogue(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Rogue::selectSkills() {

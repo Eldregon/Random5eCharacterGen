@@ -2,10 +2,12 @@
 
 Monk::Monk()
     : Character() {
+        selectSkills();
 
 }
 Monk::Monk(uint32_t level)
     : Character(level) {
+        selectSkills();
 
 }
 

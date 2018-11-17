@@ -21,7 +21,7 @@ CPPL = g++ $(CPPFLAGS) $(LINKFLAGS)
 .PHONY: all
 all: | toolchain $(PNAME)
 
-SRCS = main.cpp character.cpp fighter.cpp
+SRCS = main.cpp character.cpp barbarian.cpp bard.cpp cleric.cpp druid.cpp fighter.cpp monk.cpp paladin.cpp ranger.cpp rogue.cpp sorcerer.cpp warlock.cpp wizard.cpp
 SOBJ = $(patsubst %.cpp, $(ODIR)/%.o, $(SRCS))
 
 $(BDIR)/$(PNAME): $(SOBJ)

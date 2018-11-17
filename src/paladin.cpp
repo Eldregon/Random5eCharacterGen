@@ -2,11 +2,11 @@
 
 Paladin::Paladin()
     : Character() {
-
+        selectSkills();
 }
 Paladin::Paladin(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Paladin::selectSkills() {

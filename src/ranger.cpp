@@ -2,11 +2,11 @@
 
 Ranger::Ranger()
     : Character() {
-
+        selectSkills();
 }
 Ranger::Ranger(uint32_t level)
     : Character(level) {
-
+        selectSkills();
 }
 
 void Ranger::selectSkills() {

@@ -2,11 +2,11 @@
 
 Barbarian::Barbarian()
     : Character() {
-
+        selectSkills();
     }
 Barbarian::Barbarian(uint32_t level)
     : Character(level) {
-
+        selectSkills();
     }
 
 void Barbarian::selectSkills() {
