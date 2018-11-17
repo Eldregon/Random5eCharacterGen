@@ -9,6 +9,7 @@
 #include <time.h>
 
 #include "character.hpp"
+#include "fighter.hpp"
 
 int main() {
     srand(time(NULL));
@@ -19,8 +20,11 @@ int main() {
 
     player.printer();
 
-    std::cout << "Debugging skill mapping" << std::endl;
-    std::cout << "ACROBATICS: " << ACROBATICS << std::endl;
+    std::cout << "Testing skill selection of Fighter" << std::endl;
+    Fighter fighter;
+    fighter.rollForStats();
+    fighter.selectSkills();
+    fighter.printer();
 
     return 0;
 }

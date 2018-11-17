@@ -51,6 +51,10 @@ class Character {
         // Create skill to attribute map
         void create_skill_attribute_map();
 
+        // Printer helper functions
+        void printAttributes();
+        void printSkills();
+
         // Member variables
         uint32_t m_level;
         std::vector<uint32_t> m_stats;

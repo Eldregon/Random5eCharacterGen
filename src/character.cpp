@@ -69,12 +69,24 @@ int Character::getSkillModifier(std::string skill) {
 }
 
 void Character::printer() {
+    printAttributes();
+    printSkills();
+}
+
+void Character::printAttributes() {
     std::cout << "Str: " << m_stats[STR] << std::endl;
     std::cout << "Dex: " << m_stats[DEX] << std::endl;
     std::cout << "Con: " << m_stats[CON] << std::endl;
     std::cout << "Int: " << m_stats[INT] << std::endl;
     std::cout << "Wis: " << m_stats[WIS] << std::endl;
     std::cout << "Chr: " << m_stats[CHA] << std::endl;
+}
+void Character::printSkills() {
+    for (auto iter = m_skills.begin(); iter != m_skills.end(); iter++) {
+        if (iter->second.proficient) {
+            std::cout << "Skill: " << iter->first << std::endl;
+        }
+    }
 }
 
 void Character::create_skill_attribute_map() {
