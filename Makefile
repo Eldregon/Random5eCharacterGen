@@ -21,7 +21,7 @@ CPPL = g++ $(CPPFLAGS) $(LINKFLAGS)
 .PHONY: all
 all: | toolchain $(PNAME)
 
-SRCS = main.cpp
+SRCS = main.cpp character.cpp
 SOBJ = $(patsubst %.cpp, $(ODIR)/%.o, $(SRCS))
 
 $(BDIR)/$(PNAME): $(SOBJ)
