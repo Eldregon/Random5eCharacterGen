@@ -37,6 +37,13 @@ class Character {
         void pickForStats();
         int getAttributeModifier(int stat);
 
+        // Health
+        void setHealthDie(int healthDie);
+        void createHealth();
+        void addHealth();
+
+        uint32_t getHealth();
+
         // Skills
         void selectSkills(std::vector<std::string> valid_skills, int skillCount);
         int getSkillModifier(std::string skill);
@@ -58,6 +65,8 @@ class Character {
         // Member variables
         uint32_t m_level;
         std::vector<uint32_t> m_stats;
+        int32_t m_hitdie;
+        int32_t m_health;
         int32_t m_proficiency;
         std::vector<bool> m_saving_throws;
         std::map<std::string, Skill_Data> m_skills;

@@ -3,10 +3,12 @@
 Cleric::Cleric()
     : Character() {
         selectSkills();
+        Character::setHealthDie(8);
 }
 Cleric::Cleric(uint32_t level)
     : Character(level) {
         selectSkills();
+        Character::setHealthDie(8);
 }
 
 void Cleric::selectSkills() {

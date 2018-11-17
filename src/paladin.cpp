@@ -3,10 +3,12 @@
 Paladin::Paladin()
     : Character() {
         selectSkills();
+        Character::setHealthDie(10);
 }
 Paladin::Paladin(uint32_t level)
     : Character(level) {
         selectSkills();
+        Character::setHealthDie(10);
 }
 
 void Paladin::selectSkills() {

@@ -3,10 +3,12 @@
 Warlock::Warlock()
     : Character() {
         selectSkills();
+        Character::setHealthDie(8);
 }
 Warlock::Warlock(uint32_t level)
     : Character(level) {
         selectSkills();
+        Character::setHealthDie(8);
 }
 
 void Warlock::selectSkills() {

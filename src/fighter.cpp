@@ -2,13 +2,13 @@
 
 Fighter::Fighter()
     : Character() {
-
         selectSkills();
+        Character::setHealthDie(10);
 }
 Fighter::Fighter(uint32_t level)
     : Character(level) {
-
         selectSkills();
+        Character::setHealthDie(10);
 }
 
 void Fighter::selectSkills() {

@@ -3,12 +3,12 @@
 Monk::Monk()
     : Character() {
         selectSkills();
-
+        Character::setHealthDie(8);
 }
 Monk::Monk(uint32_t level)
     : Character(level) {
         selectSkills();
-
+        Character::setHealthDie(8);
 }
 
 void Monk::selectSkills() {

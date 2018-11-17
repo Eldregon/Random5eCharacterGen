@@ -3,10 +3,12 @@
 Druid::Druid()
     : Character() {
         selectSkills();
+        Character::setHealthDie(8);
 }
 Druid::Druid(uint32_t level)
     : Character(level) {
         selectSkills();
+        Character::setHealthDie(8);
 }
 
 void Druid::selectSkills() {

@@ -3,10 +3,12 @@
 Rogue::Rogue()
     : Character() {
         selectSkills();
+        Character::setHealthDie(8);
 }
 Rogue::Rogue(uint32_t level)
     : Character(level) {
         selectSkills();
+        Character::setHealthDie(8);
 }
 
 void Rogue::selectSkills() {

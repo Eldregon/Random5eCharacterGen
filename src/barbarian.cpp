@@ -3,10 +3,12 @@
 Barbarian::Barbarian()
     : Character() {
         selectSkills();
+        Character::setHealthDie(12);
     }
 Barbarian::Barbarian(uint32_t level)
     : Character(level) {
         selectSkills();
+        Character::setHealthDie(12);
     }
 
 void Barbarian::selectSkills() {

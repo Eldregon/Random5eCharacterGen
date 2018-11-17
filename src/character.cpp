@@ -46,6 +46,18 @@ int Character::getAttributeModifier(int stat) {
     }
     return 0;
 }
+void Character::setHealthDie(int healthDie) {
+    m_hitdie = healthDie;
+}
+void Character::createHealth() {
+    m_health = m_hitdie + getAttributeModifier(CON);
+}
+void Character::addHealth() {
+    m_health += getAttributeModifier(CON) + rand()%m_hitdie;
+}
+uint32_t Character::getHealth() {
+    return m_health;
+}
 void Character::selectSkills(std::vector<std::string> valid_skills, int skillCount) {
     // Pick as many random skills from the argument vector and gain proficiency in them
     int selectedCount = 0;
