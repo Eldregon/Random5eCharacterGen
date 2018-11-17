@@ -14,10 +14,13 @@ int main() {
     srand(time(NULL));
 
     Character player;
-    //player.rollForStats();
+    player.rollForStats();
     //player.pickForStats();
 
     player.printer();
+
+    std::cout << "Debugging skill mapping" << std::endl;
+    std::cout << "ACROBATICS: " << ACROBATICS << std::endl;
 
     return 0;
 }
